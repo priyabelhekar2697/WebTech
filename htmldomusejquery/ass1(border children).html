@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#b1").click(function(){
+            $("body").children().css("border", "5px solid blue");
+        });
+        
+        });
+
+
+    </script>
+</head>
+<body>
+    
+        <ul>
+            <li>Array</li>
+            <li>Linked List</li>
+            <li>Queue</li>
+            <li>Stack</li>
+        </ul>
+        <p>
+            An array is a data structure that contains a group of elements.
+            Typically these elements are all of the same data type, such as an integer or string.
+            Arrays are commonly used in computer programs to organize data so that a related set of values can be easily sorted or searched.
+
+            For example, a search engine may use an array to store Web pages found in a search
+            performed by the user. When displaying the results, the program will output one element of
+            the array at a time. This may be done for a specified number of values or until all the values
+            stored in the array have been output. While the program could create a new variable for each result
+            found, storing the results in an array is much more efficient way to manage memory.
+        </p>
+    <br />
+    <button id="b1">Border Children of Body</button>
+</body>
+</html>
