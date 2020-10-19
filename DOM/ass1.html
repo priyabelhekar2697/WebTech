@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+	
+	
+    <script type="text/javascript">
+
+        function scrollImg()
+        {
+            
+            var img = document.getElementById("imgg");
+            
+                if (parseInt(img.style.left) > window.innerWidth)
+                {
+                    img.style.left = "50px";
+                }
+               
+              
+                img.style.left = (parseInt(img.style.left)+50)+"px";
+
+                x=setTimeout(function () { scrollImg(); }, 100);
+        }
+
+
+        function stopScroll()
+        {
+            clearTimeout(x);
+            var img = document.getElementById("imgg");
+            img.style.left = "50px";
+            img.style.top = "50px";
+        }
+    </script>
+</head>
+<body>
+    <img src="download.jpg" height="200" width="200" id="imgg" style="position:absolute;top:50px;left:50px"
+          onclick="scrollImg()" onmouseover="stopScroll()"/>
+</body>
+</html>
