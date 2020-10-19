@@ -1,0 +1,95 @@
+﻿
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>  Web Page </title>
+</head>
+<body>
+    <a href="#oop"> OOP Conccept </a><br>
+    <a href="#namespace"> Namespace information </a><br>
+    <a href="#Exception"> Exception Handling concept </a><br>
+    <a href="#rtti "> RTTI </a><br>
+
+    <h2> <b><u><a id="oop">What is OOP</a> </u></b></h2><br>
+    <p>
+        Object-oriented programming: As the name suggests,
+        Object-Oriented Programming or OOPs refers to languages that uses objects in programming.
+        Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism etc
+        in programming. The main aim of OOP is to bind together the data and the functions that operate on them
+        so that no other part of the code can access this data except that function.
+    </p>
+
+    <h2><b><u><a id="namespace">What is Namaspace</a> </u></b></h2><br>
+    <p>
+        namespace is a declarative region that provides a scope to the
+        identifiers (the names of types, functions, variables, etc) inside it.
+        Namespaces are used to organize code into logical groups and to prevent name
+        collisions that can occur especially when your code base includes multiple libraries.
+        All identifiers at namespace scope are visible to one another without qualification.
+        Identifiers outside the namespace can access the members by using the fully qualified name
+        for each identifier, for example std::vector<std::string>
+            vec;, or else by a using
+            Declaration for a single identifier (using std::string), or a using Directive for all
+            the identifiers in the namespace (using namespace std;). Code in header files should always
+            use the fully qualified namespace name.
+    </p>
+
+    <h2><b><u><a id="Exception">What is Exception</a> </u></b></h2><br>
+
+
+    <p>
+        An exception is a problem that arises during the execution of a program.
+        A C++ exception is a response to an exceptional circumstance that arises while a program is running,
+        such as an attempt to divide by zero.
+
+        Exceptions provide a way to transfer control from one part of a program to another.
+        C++ exception handling is built upon three keywords: try, catch, and throw.
+
+    </p>
+
+    <h3><b><u>throw</u></b></h3>
+    <p>
+        A program throws an exception when a problem shows up. This is done using a throw keyword.
+
+        Exceptions can be thrown anywhere within a code block using throw statement. The operand of
+        the throw statement determines a type for the exception and can be any expression and the type of
+        the result of the expression determines the type of exception thrown.
+    </p>
+
+    <h3><b><u>catch</u></b></h3>
+    <p>
+        A program catches an exception with an exception handler at the place in a program where you
+        want to handle the problem. The catch keyword indicates the catching of an exception.
+    </p>
+
+    <h3><b><u>try</u></b></h3>
+    <p>
+        A try block identifies a block of code for which particular exceptions will be activated.
+        It's followed by one or more catch blocks.
+    </p>
+
+    <p>
+        Assuming a block will raise an exception, a method catches an exception using a
+        combination of the try and catch keywords. A try/catch block is placed around the code that might
+        generate an exception.
+    </p>
+
+    <h3> <b><u><a id="rtti">RTTI</a></u></b></h3><br>
+    <p>
+        In C++, RTTI (Run-time type information) is a mechanism that exposes information about an
+        object’s data type at runtime and is available only for the classes which have at least one
+        virtual function. It allows the type of an object to be determined during program execution
+
+        For example, dynamic_cast uses RTTI and following program fails with error “cannot dynamic_cast `b’
+        (of type `class B*’) to type `class D*’ (source type is not polymorphic) ” because there is no virtual
+        function in the base class B.
+
+        filter_none
+    </p>
+
+
+
+</body>
+</html>
