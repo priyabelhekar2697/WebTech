@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Array</title>
+    <script>
+        
+        var no = prompt("Enter the length of array ");
+        var len = parseInt(no);
+        var arr=[];
+        
+        for(i=0;i<len;i++)
+        {
+            var val = prompt("Enter the elements of array ");
+             arr[i] = parseInt(val);
+        }
+
+        
+        function average()
+        {
+           
+            for(i=0;i<len;i++)
+            {
+            
+                var summ=arr.reduce(function(a,b){ return a+b;})
+            }
+           
+            var avgg=parseInt(summ/5);
+        
+         document.getElementById("avg").innerHTML="Average of Array Elements is : "+avgg;
+        }
+       
+        function AdditionArr()
+        {
+            
+            for(i=0;i<len;i++)
+            {
+            
+                var summ1=arr.reduce(function(a,b){ return a+b;})
+            }
+            
+        document.getElementById("ADD").innerHTML="Addition of Array Elements is : "+summ1;
+        }
+        
+        function MaxofArray()
+        {
+            var i=0;
+            arr.sort(function(a,b){return b-a;});
+           
+            document.getElementById("sor").innerHTML="Maximum of array element is :"+arr[i];
+                
+            
+        }
+
+        function MinofArray()
+        {
+            var i=0;
+            arr.sort(function(a,b){return a-b;});
+           
+            document.getElementById("sor").innerHTML="Minimum of array element is :"+arr[i];
+                
+            
+        }
+
+        function EvenElements()
+        {
+            var filtered=arr.filter(function(val){if((val%2)==0){return true;}})
+             
+            if(filtered.length == arr.length)
+        {
+             document.getElementById("evn").innerHTML="All elements are even ";
+        }
+        else
+        {
+             document.getElementById("evn").innerHTML="All elements are not even ";
+        }
+               
+            
+        }
+
+        function OddElements()
+        {
+             var bool = arr.every(function (element) {
+            if (element % 2 != 0)
+                return true;
+            else
+                return false;
+        });
+        if(bool==true)
+        {
+            document.getElementById("odd").innerHTML = "All are odd numbers : ";
+        }
+        else
+        {
+            document.getElementById("odd").innerHTML = "All are not odd numbers : ";
+        }
+            
+        
+        }
+
+        function EvenOdd()
+        {
+            var filtered2=arr.filter(function(val){if((val%2)!=0){return true;}});
+
+           
+
+            var filtered3=arr.filter(function(val1){if((val1%2)==0){return true;}});
+
+             document.getElementById("evnodd").innerHTML = "Even : " +  filtered3 + "<br/>Odd : " + filtered2;
+            
+        }
+    </script>
+</head>
+<body>
+
+    <form style="background-color:darkgoldenrod">
+
+        <input type="button" value="Average" onclick="average()" /><br /><br /><br />
+        <input type="button" value="Addition" onclick=" AdditionArr()" /><br /><br /><br />
+        <input type="button" value="Maximum" onclick=" MaxofArray()" /><br /><br /><br />
+        <input type="button" value="Minimum" onclick=" MinofArray()" /><br /><br /><br />
+        <input type="button" value="Evennum" onclick=" EvenElements()" /><br /><br /><br />
+        <input type="button" value="Oddnum" onclick=" OddElements()" /><br /><br /><br />
+        <input type="button" value="EvenOdd" onclick=" EvenOdd()" /><br /><br /><br />
+
+        <span id="avg"></span><br />
+        <span id="ADD"></span><br />
+        <span id="sor"></span><br />
+        <span id="min"></span><br />
+        <span id="evn"></span><br />
+        <span id="odd"></span><br />
+        <span id="evnodd"></span><br />
+
+    </form>
+
+   
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>slide show</title>
+    <script language="JavaScript">
+
+        var i=0;
+        var arr=["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg"];
+        function nextImg()
+        {
+          i++;
+            if(i==arr.length)
+                i=0;
+            
+             document.getElementById("img1").src = "Images/"+arr[i];
+        
+        }
+        function previousImg()
+        {
+              i--;
+
+                if(i<0)
+                    i=arr.length-1;
+         document.getElementById("img1").src = "Images/"+arr[i];
+
+        }
+    </script>
+</head>
+<body>
+    <img src="Images/1.jpg" id="img1" style="width:500px;height:500px"/><br /><br /><br />
+
+    <button onclick="nextImg()">Next Image</button><br /><br />
+    <button onclick="previousImg()">Previous Image</button><br /><br />
+
+
+
+</body>
+</html>

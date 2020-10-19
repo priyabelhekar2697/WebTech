@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script >
+
+        var no = prompt("Enter the length of array ");
+        var len = parseInt(no);
+        var arr=[];
+        for(i=0;i<len;i++)
+        {
+            var val = prompt("Enter the elements of array ");
+             arr[i] = parseInt(val);
+        }
+
+        function AdditionArr()
+        {
+            
+            for(i=0;i<len;i++)
+            {
+            
+                var summ=arr.reduce(function(a,b){ return a+b;})
+            }
+            alert(summ);
+        document.getElementById("ADD").innerHTML="Addition of Array Elements is : "+summ;
+        }
+       
+    </script>
+
+</head>
+<body>
+    
+       
+          
+            <button onclick=" AdditionArr()" value="array">Addition</button><br/>
+
+            <span id="ADD"></span>
+
+
+
+    
+</body>
+</html>
