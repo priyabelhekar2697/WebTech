@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+   
+<script>
+       function factorial(num)
+{
+       var fact=1;
+       var i=1;
+	var str="<table border=1>"
+      str+="<tr>";
+	str+="<td>";
+	str+="Number";
+       	str+="</td>";
+       	str+="<td>";
+	str+="Factorial";
+	str+="</td>";
+	str+="</tr>";
+	while(i<=num){
+                for(var j=1;j<=i;j++){
+	                fact = fact*j;
+                }
+            str+= "<tr><td>"+i+"</td><td>"+fact+"</td><tr>";
+            i++;
+            fact=1;
+            }
+
+	str+="</table>"
+	document.getElementById("fact").innerHTML=str;
+}
+
+   </script> 
+
+</head>
+
+<body>
+    <div style="background-color:antiquewhite;width:400px;height:auto">
+
+        <form>
+            <table style="background-color:blueviolet">
+                <tr>
+                    <td> Enter the number:</td>
+                    <td> <input type="number" name="num" /><br /><br /></td>
+                </tr>
+                <tr>
+                    <td> <input type="button" value="calculate factorial" onclick="factorial(num.value)" /></td>
+                </tr>
+
+            </table>
+        </form>
+
+        <br /><br />
+        <h1> <span id="fact"></span></h1>
+    </div>
+</body>
+</html>
