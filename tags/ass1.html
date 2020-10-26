@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h2>Data Structure Elemets</h2>
+    <ul>
+        <li>
+            <h3>Array</h3>
+            <p>
+                An <mark>Array</mark> is a collection of items stored at contiguous memory locations.
+                The idea is to <b><i>store multiple items of the same type together.</i></b>
+                This makes it easier to calculate the position of each element by simply
+                adding an offset to a base value, i.e., <span style="color:red">
+                    the memory location of the first element
+                     of the array (generally denoted by the name of the array).</span>
+               </p>
+        
+           </li>
+
+        <li>
+            <h3>Stack</h3>
+            
+              <p>  <span style="color:red">Stacks are a type of container adaptor,
+                specifically designed to operate in a LIFO context
+                (last-in first-out), where elements are inserted and extracted only from one end of the container.</span></p>
+           
+            <p>
+                <mark>Stack</mark> are implemented as container adaptors, which are classes that use an
+                encapsulated object of a specific container class as its underlying container, providing a
+                specific set of member functions to access its elements. Elements are pushed/popped from the
+                "back" of the specific container, which is known as the top of the stack.
+
+                The underlying container may be any of the standard container class templates or
+                some other specifically designed container class. The container shall support the following operations:
+                <ul>
+                    <li>empty</li>
+                    <li>size</li>
+                    <li>back</li>
+                    <li>push_back</li>
+                    <li>pop_back</li>
+                </ul>
+            </p>
+          
+
+        </li>
+
+        <li>
+            <h3>Linked List</h3>
+            <p>
+                <span style="color:red">Like arrays, Linked List is a linear data structure.
+                Unlike arrays, linked list elements are not stored at a contiguous location;
+                the elements are linked using pointers.</span>
+            </p>
+
+            <b>Why Linked List?</b>
+            <p>Arrays can be used to store linear data of similar types, but arrays have the following limitations.</p>
+            <ol>
+                <li>
+                    The size of the arrays is fixed: So we must know the upper limit on
+                    the number of elements in advance. Also, generally, the allocated memory
+                    is equal to the upper limit irrespective of the usage.
+                </li>
+                <li>
+                    Inserting a new element in an array of elements is expensive because the room
+                    has to be created for the new elements and to create room existing elements have to be shifted.
+                </li>
+            </ol>
+            
+
+        </li>
+    </ul>
+
+</body>
+</html>
