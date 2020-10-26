@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+
+        function DefaultTime()
+        {
+              hh=mm=ss="00";
+
+            
+            
+             document.getElementById("stra").innerHTML="Time : "+hh+":"+mm+":"+ss;
+        }
+
+        function StartTimer()
+        {
+            
+
+            ss++;
+            if(ss==60)
+            {
+                mm++;
+                ss=0;
+            }
+            if(mm==60)
+            {
+                hh++;
+                mm=0;
+            }
+            
+            document.getElementById("stra").innerHTML="Time : "+hh+":"+mm+":"+ss;
+            flag=setTimeout(function(){StartTimer();},1000);
+        }
+
+        function PauseTimer()
+        {
+            clearTimeout(flag);
+        }
+
+        function ResetTimer()
+        {
+            clearTimeout(flag);
+            hh=mm=ss="00";
+
+            document.getElementById("stra").innerHTML="Time : "+hh+":"+mm+":"+ss;
+        }
+
+    </script>
+</head>
+<body onload="DefaultTime()" >
+    <form>
+        <input type="button" onclick="StartTimer()" value="Start" /><br /><br />
+        <input type="button" onclick="PauseTimer()" value="Pause" /><br /><br />
+        <input type="button" onclick="ResetTimer()" value="Reset" /><br /><br />
+
+        <h1><span id="stra" style="float:left"></span></h1><br />
+       
+
+    </form>
+</body>
+</html>

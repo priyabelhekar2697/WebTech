@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>String</title>
+    <script>
+        
+         
+
+           function myNameLength()
+        {
+
+            name=document.f1.nm.value;
+            var NameLen=name.length;
+
+              document.getElementById("nm").innerHTML="Name :" +name;
+              document.getElementById("len").innerHTML="Name length :" +NameLen;
+        
+        }
+        function UpperCase()
+        {
+            name=document.f1.nm.value;
+            var Upcase=name.toUpperCase();
+            
+            document.getElementById("nm").innerHTML="Name :" +name;
+            document.getElementById("upp").innerHTML="Name in Upper Case :" +Upcase;
+            
+            
+        }
+        function LowerCase()
+        {
+            name=document.f1.nm.value;
+            var Lowcase=name.toLowerCase();
+            
+            document.getElementById("nm").innerHTML="Name :" +name;
+            document.getElementById("low").innerHTML="Name in Lower Case :" +Lowcase;
+            
+            
+        }
+        
+        function SearchLetter()
+        {
+            name=document.f1.nm.value;
+            var nm=name.search("w");
+
+            if(nm==-1)
+            {
+                document.getElementById("sr").innerHTML="Character Not Found";
+            }
+            else
+            {
+                document.getElementById("sr").innerHTML="w found at : " +nm+" location";
+            }
+        }
+
+        function ValueAt()
+        {
+            name=document.f1.nm.value;
+            var l=prompt("Enter index");
+
+           
+            var ch1=name.charAt(l);
+            
+          
+            
+            document.getElementById("At").innerHTML="Character at "+l+" location is : "+ch1;
+
+        }
+        function ValueAtAscii()
+        {
+            name=document.f1.nm.value;
+            var l=prompt("Enter index");
+
+             var chh=name.charCodeAt(l);
+
+            document.getElementById("At1").innerHTML="Ascii code of Character at "+l+" location is : "+chh;
+
+        }
+
+        function ConcatName()
+        {
+            var name=document.f1.nm.value;
+           var name1=document.f1.nm1.value;
+            
+            
+            var NewName=name.concat(" ");
+            var NewName1=NewName.concat(name1);
+
+             document.getElementById("con").innerHTML="New Name :"+NewName1;
+
+        }
+
+        function DisplayAll()
+        {
+             var name=document.f1.nm.value;
+
+            var arr=name.split("");
+            var arr1=arr.join(" ");
+            document.getElementById("all").innerHTML="Char Array :"+arr1;
+        }
+
+
+    </script>
+</head>
+<body>
+    
+    <form name="f1" style="background-color:lemonchiffon;height:auto;width:auto">
+        Enter Name : <input type="text" name="nm" /><br /><br />
+        Enter Name : <input type="text" name="nm1" /><br /><br />
+
+        <input type="button" onclick="myNameLength()" value="Length" /><br /><br />
+        <input type="button" onclick="UpperCase()" value="Upper Case" /><br /><br />
+        <input type="button" onclick="LowerCase()" value="Lower Case" /><br /><br />
+        <input type="button" onclick="SearchLetter()" value="Search" /><br /><br />
+        <input type="button" onclick="ValueAt()" value="charloc" /><br /><br />
+        <input type="button" onclick="ValueAtAscii()" value="charlocAscii" /><br /><br />
+        <input type="button" onclick="ConcatName()" value="Concat" /><br /><br />
+        <input type="button" onclick="DisplayAll()" value="All Char" /><br /><br />
+
+
+        <h1><span id="nm"></span></h1><br />
+        <h1><span id="len"></span></h1><br />
+        <h1><span id="upp"></span></h1><br />
+        <h1><span id="low"></span></h1><br />
+        <h1><span id="sr"></span></h1><br />
+        <h1><span id="At"></span></h1><br />
+        <h1><span id="At1"></span></h1><br />
+        <h1><span id="con"></span></h1><br />
+        <h1><span id="all"></span></h1><br />
+    </form>
+    
+</body>
+</html>

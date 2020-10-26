@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Date</title>
+
+    <script>
+        function DisplayDay(bdatestr)
+        {
+            var bd=new Date(bdatestr);
+           
+             document.getElementById("Dy").innerHTML="Day :" +bd.getDay();
+        }
+
+        function DisplayMonth(bdate)
+        {
+            var mon=new Date(bdate)
+            
+            document.getElementById("Mon").innerHTML="Month :" +mon.getMonth();
+            
+        }
+
+        function DisplayYear(bdate)
+        {
+            var year=new Date(bdate);
+
+            document.getElementById("Yr").innerHTML="Year :" +year.getFullYear();
+        }
+        function DisplayAge(bdate)
+        {
+            var today = new Date();
+            var d=new Date(bdate);
+        var age = today.getFullYear() - d.getFullYear();
+
+        if (today.getMonth() < d.getMonth() || (today.getMonth() == d.getMonth() && today.getDate() < d.getDay())) 
+        {
+            age--;
+        }
+
+         document.getElementById("Ag").innerHTML="Age :" +age;
+        }
+
+    </script>
+</head>
+<body>
+    <form style="background-color:indianred;width:500px;height:auto">
+
+        Enter Birth Date:<input type="date" name="bdate" /><br />
+        <input type="button" onclick="DisplayDay(bdate.value)" value="Day" /><br /><br />
+        <input type="button" onclick="DisplayMonth(bdate.value)" value="Month" /><br /><br />
+        <input type="button" onclick="DisplayYear(bdate.value)" value="Year" /><br /><br />
+        <input type="button" onclick="DisplayAge(bdate.value)" value="Age" /><br /><br />
+
+
+        <h1><span id="Dy"></span><br /></h1>
+        <h1><span id="Mon"></span><br /></h1>
+        <h1><span id="Yr"></span><br /></h1>
+        <h1><span id="Ag"></span><br /></h1>
+    </form>
+</body>
+</html>
