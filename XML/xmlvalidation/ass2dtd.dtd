@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT RECIPEs (Recipe)>
+<!ELEMENT Recipe (Name, Desc, Ingrident+, intstruction)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Desc (#PCDATA)>
+<!ELEMENT Ingrident (item, quantity)>
+<!ELEMENT item (#PCDATA)>
+<!ELEMENT quantity (#PCDATA)>
+<!ELEMENT intstruction (step)+>
+<!ELEMENT step (#PCDATA)>
+<!ATTLIST Name
+	Type (Main_course | Starter | SweetDish) #REQUIRED
+>
+<!ATTLIST quantity
+	unit (gram | Liter | Tea-spoon | Table-spoon) "gram"
+>

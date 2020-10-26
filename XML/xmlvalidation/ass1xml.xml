@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE CDCatlogs SYSTEM "ass1dtd.dtd"><CDCatlogs>	<CD lang="English">		<title>POP Songs</title>		<Artist>Honey Singh</Artist>		<Compony>T-series</Compony>		<price>500</price>	</CD>	<CD lang="Hindi">		<title>POP Songs</title>		<Artist>Neha Kakkar</Artist>		<Compony>T-series</Compony>		<price>1000</price>	</CD></CDCatlogs>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<RECIPEs>
+	<Recipe>
+		<Name Type="Starter">Panner Chillie</Name>
+		<Desc>It is the Panner item.</Desc>
+		<Ingrident>
+			<item>&quot;Panner &quot;onion &quot;Ginger &quot;Garlic</item>
+			<quantity unit="gm">300</quantity>
+		</Ingrident>
+		<intstruction>
+				<step>Serving Suggestions: Serve chilli paneer with 
+						fried rice or schezwan fried rice or burnt garlic fried rice.
+						It also goes well as a side dish with pulao or jeera rice or ghee rice. 
+						You can also have it with tandoori roti or naan or roomali roti. You can even have it 
+						as an appetizer snack with any chinese dipping sauce.
+				</step>
+		</intstruction>
+		
+	</Recipe>
+</RECIPEs>

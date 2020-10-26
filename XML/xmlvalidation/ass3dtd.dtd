@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT Compony (Employee)+>
+<!ELEMENT Employee (Name,EmployeeId,Salary,Contact+,Email+,Dbirth,Department)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT EmployeeId (#PCDATA)>
+<!ELEMENT Salary (Basic,Allownces*)>
+<!ELEMENT Basic (#PCDATA)>
+<!ELEMENT Allownces (#PCDATA)>
+<!ELEMENT Contact (#PCDATA)>
+<!ELEMENT Email (#PCDATA)>
+<!ELEMENT Dbirth (#PCDATA)>
+<!ELEMENT Department (#PCDATA)>
+
+<!ATTLIST Employee designation CDATA #IMPLIED>
+<!ATTLIST Basic unit CDATA "rs">
+<!ATTLIST Allownces unit CDATA "rs">
+<!ATTLIST Allownces type (TA|DA|Extra|HRA) #REQUIRED>
+

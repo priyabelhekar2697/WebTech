@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<CDCatlogs>
+	<CD lang="en">
+		<title>POP Songs</title>
+		<Artist>Honey Singh</Artist>
+		<Compony>T-series</Compony>
+		<price>500</price>
+	</CD>
+<CD lang="en">
+		<title>POP Songs</title>
+		<Artist>Honey Singh</Artist>
+		<Compony>T-series</Compony>
+		<price>500</price>
+	</CD>
+</CDCatlogs>
