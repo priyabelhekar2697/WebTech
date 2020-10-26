@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+
+    <form>
+    <div style="border:groove;width:650px;background-color:aliceblue">
+        <h2 style="color:red">Registration Form</h2>
+        <p>
+            Please note that all fields that have asterisk mark(*) are required
+            to process your registration.
+        </p>
+        <table>
+            <tr style="background-color:gray;color:white">
+                <td colspan="2"> Personal Details</td>
+                <td colspan="2">Address</td>
+            </tr>
+
+            <tr>
+                <td><label for="ttl">Title</label></td>
+                <td> <input type="text" name="ttl" id="ttl" /><br />(Mr/Mrs/Miss)</td>
+
+                <td><label for="addr">Address</label></td>
+                <td> <input type="text" name="addr" id="addr" /></td>
+            </tr>
+
+            <tr>
+                <td><label for="fnm">First Name:</label></td><br />
+                <td><input type="text" name="fnm" id="fnm" required /><br />*</td>
+                <td></td>
+                <td><input type="text" /></td>
+            </tr>
+            <tr>
+                <td><label for="lnm">Last Name:</label></td>
+                <td><input type="text" name="lnm" id="lnm" required /><br />*</td>
+                <td><label for="twn">Town:</label></td>
+                <td><input type="text" name="twn" id="twn" /></td>
+            </tr>
+            <tr>
+                <td><label for="eml">Email Address:</label></td>
+                <td><input type="email" name="eml" id="eml" required/><br />*</td>
+                <td><label for="cn">Country/State:</label></td>
+                <td><input type="text" name="cn" id="cn" /></td>
+            </tr>
+            <tr>
+                <td><label for="tel">Telephone:</label></td>
+                <td><input type="tel" name="tel" id="tel" required /><br />*</td>
+                <td><label for="cn1">Country:</label></td>
+                <td>
+                    <select>
+                        <option>India</option>
+                        <option>United State</option>
+                        <option>London</option>
+
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="cell">Cell Phone:</label></td>
+                <td><input type="text" name="cell" id="cell" required maxlength="10" /></td>
+                <td><label for="pst">Postcode:</label></td>
+                <td><input type="text" name="pst" id="pst" />*</td>
+            </tr>
+            <tr>
+                <td><label for="cmnt">Comment:</label></td>
+                <td colspan="3"><textarea name="comment" rows="10" cols="50"></textarea></td>
+
+            </tr>
+        </table>
+
+
+        <table style="border:1px solid green">
+            <tr>
+                <td><label for="feed">Feedback:</label></td>
+                <td><input type="text" name="feed" id="feed" /></td>
+                <td>Hear us From?</td>
+                <td>
+                    <input type="checkbox" name="frnd" value="Friend" />Friend
+                    <input type="checkbox" name="own" value="own" />Site Owner
+                    <input type="checkbox" name="srch" value="srch" />Search Engine
+
+
+                </td>
+            </tr>
+        </table>
+
+        <table>
+            <tr style="background-color:gray;color:white">
+                <td colspan="4">Security Details</td>
+            </tr>
+
+            <tr>
+                <td><label for="pass">Choose Password:</label></td>
+                <td><input type="password" name="pass" id="pass" required /><br />*</td>
+                <td><label for="pass1">Confirm Password:</label></td>
+                <td><input type="password" name="pass1" id="pass1" required/><br />*</td>
+            </tr>
+        </table>
+
+    </div>
+    <br /><br /><br /><br />
+    <input type="submit" value="SUBMIT" />
+    <input type="reset" value="RESET" />
+    <br /><br /><br /><br />
+        </form>
+    
+</html>

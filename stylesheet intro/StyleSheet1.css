@@ -1,0 +1,18 @@
+﻿a:link,a:visited {
+    
+   
+    text-decoration-color: black;
+    background-color:violet;
+    color: white;
+    padding: 14px ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+a:hover, a:active {
+    background-color: red;
+}
+body
+{
+    background-color:blueviolet;
+}
