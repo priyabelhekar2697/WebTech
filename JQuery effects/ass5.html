@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("#c1").click(function(){
+        $("#content1").slideToggle(4000);
+        });
+        $("#c2").click(function(){
+        $("#content2").slideToggle(4000);
+        });
+        $("#c3").click(function(){
+        $("#content3").slideToggle(4000);
+        });
+        
+        
+        
+        });
+    </script>
+</head>
+<body>
+    <div style="background-color:aqua">
+        <h1>Array <button id="c1" style="float:right">?</button></h1>
+        
+        
+    </div>
+    <div id="content1" style="display:none">
+        <p>
+            An array is a data structure that contains a group of elements. 
+            Typically these elements are all of the same data type, such as an integer or string. 
+            Arrays are commonly used in computer programs to organize data so that a related set of values can be easily sorted or searched.
+
+            For example, a search engine may use an array to store Web pages found in a search 
+            performed by the user. When displaying the results, the program will output one element of 
+            the array at a time. This may be done for a specified number of values or until all the values
+            stored in the array have been output. While the program could create a new variable for each result 
+            found, storing the results in an array is much more efficient way to manage memory.
+        </p>
+    </div>
+    <div style="background-color:aqua">
+        <h1>Linked List <button id="c2" style="float:right">?</button></h1>
+    </div>
+    <div id="content2" style="display:none">
+        <p>
+            In computer science, a linked list is a linear collection of data elements whose order is 
+            not given by their physical placement in memory. Instead, each element points to the next. It is a
+            data structure consisting of a collection of nodes which together represent a sequence. In its most basic form,
+            each node contains: data, and a reference (in other words, a link) to the next node in the sequence. This structure
+            allows for efficient insertion or removal of elements from any position in the sequence during iteration. More complex 
+            variants add additional links, allowing more efficient insertion or removal of nodes at arbitrary positions. A drawback of linked
+            lists is that access time is linear (and difficult to pipeline). Faster access, such as random access, is not feasible. Arrays have 
+            better cache locality compared to linked lists.
+        </p>
+    </div>
+    <div style="background-color:aqua">
+        <h1>Stack <button id="c3" style="float:right">?</button></h1>
+    </div>
+    <div id="content3" style="display:none">
+        <p>
+            In computer science, a stack is an abstract data type that serves as a collection of elements, with two main principal operations:
+
+            push, which adds an element to the collection, and
+            pop, which removes the most recently added element that was not yet removed.
+            The order in which elements come off a stack gives rise to its alternative name, LIFO (last in, first out). 
+            Additionally, a peek operation may give access to the top without modifying the stack.[1] The name "stack" 
+            for this type of structure comes from the analogy to a set of physical items stacked on top of each other. 
+            This structure makes it easy to take an item off the top of the stack, while getting to an item deeper in the 
+            stack may require taking off multiple other items first.[2]
+
+            Considered as a linear data structure, or more abstractly a sequential collection, the push and pop operations 
+            occur only at one end of the structure, referred to as the top of the stack. This data structure makes it possible 
+            to implement a stack as a singly linked list and a pointer to the top element. A stack may be implemented to have a bounded capacity.
+            If the stack is full and does not contain enough space to accept an entity to be pushed, the stack is 
+            then considered to be in an overflow state. The pop operation removes an item from the top of the stack.
+
+            A stack is needed to implement depth-first search.
+        </p>
+    </div>
+    
+</body>
+</html>

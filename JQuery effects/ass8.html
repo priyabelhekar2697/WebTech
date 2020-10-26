@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+       
+$(document).ready(function ()
+{
+    $("img").click(function ()
+    {
+        var loc = $(this).attr("src");
+        $("#res").attr("src", loc);
+    });
+});
+    </script>
+</head>
+<body>
+    <div width="600" height="600">
+        <img src="2.jpg" id="res" width="580" height="580"/>
+    </div>
+    <div id="div2">
+        <img src="2.jpg" id="i1" />
+       <img src="3.jpg" id="i2" />
+      <img src="4.jpg" id="i3" />
+       <img src="5.jpg" id="i4" />
+    </div>
+    
+</body>
+</html>
