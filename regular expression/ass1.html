@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Form Validation</title>
+    <script>
+
+        function CheckCon()
+        {
+            var id=document.f1.uid.value;
+            
+        if(id.length==0)
+        {
+            alert("User Id should be filled...");
+            document.f1.uid.value="";
+            document.f1.uid.focus();
+            return;
+        }
+        if( id.length<5 || id.length>15)
+        {
+            alert("User Id Length must be in between 5 to 15 range...");
+            document.f1.uid.value="";
+            document.f1.uid.focus();
+            return;
+        }
+        var pwd=document.f1.pwd.value;
+        if(pwd.length==0)
+        {
+            alert("Password should not be Blanked...");
+            document.f1.pwd.value="";
+            document.f1.pwd.focus();
+            return;
+        }
+         if( pwd.length < 8 || pwd.length > 15)
+        {
+            alert("Password Length must be in between 8 to 15 range...");
+            document.f1.pwd.value="";
+            document.f1.pwd.focus();
+            return;
+        }
+
+        document.f1.submit();
+        alert("Data Submitted...");
+        }
+        
+
+    </script>
+</head>
+<body>
+    <form name="f1">
+        <table>
+            <tr>
+                <td><label for="uid">Enter username:</label></td>
+                <td><input type="text" name="uid"/></td>
+            </tr>
+            <tr>
+                <td><label for="pwd">Enter Password:</label></td>
+                <td><input type="password" name="pwd"/></td>
+            </tr>
+        </table>
+        <input type="button" value="LOGIN" onclick="CheckCon()"/>
+        <input type="button" value="CANCEL" />
+
+
+    </form>
+</body>
+</html>

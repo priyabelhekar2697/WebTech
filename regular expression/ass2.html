@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+
+        function ValidateData()
+        {
+            
+        var em=document.f1.eml.value;
+            var patt4=/^\w{3,}@\w{3,}\.\w{2,3}$/;
+
+            var flag=false;
+
+            if(em.length == 0)
+            {
+                 alert("Enter email id..");
+                    document.f1.eml.value="";
+                document.f1.eml.focus();
+                return;
+            }
+            if(patt4.test(em) == flag )
+            {
+       
+                alert("Enter valid email id..");
+                document.f1.eml.value="";
+                document.f1.eml.focus();
+                return;
+			}
+            var ans=document.f1.occ.value;
+           
+            if(ans == "")
+            {
+                alert("Occupation should be selected...");
+                document.f1.occ.value="";
+                document.f1.occ.focus();
+                return;
+            }
+            
+            var rad=document.f1.answer.value;
+          
+            if(rad == false)
+            {
+                alert("No radio button Selected...");
+                document.f1.answer.value="";
+                document.f1.answer.focus();
+                return;
+            }
+
+             
+
+        document.f1.submit();
+        alert("Data Submitted...");
+
+            
+        }
+    </script>
+
+
+</head>
+<body>
+    
+        <h2><strong style="color:red">Visitors information</strong></h2>
+        <hr />
+
+        <form name="f1">
+            <table border="1" cellspacing="0">
+                <tr>
+                    <td><label for="email">Email Address:</label></td>
+                    <td><input type="email" name="eml" id="email" /></td>
+                </tr>
+                <tr>
+                    <td>Do you use web for : </td>
+                    <td>
+                        <input type="checkbox" name="r" value="research" /> Research
+                        <input type="checkbox" name="p" value="purchase" /> Purchase
+                    </td>
+                </tr>
+                <tr>
+                    <td>Occupation:</td>
+                    <td>
+                        <select name="occ">
+                            <option></option>
+                            <option>BE</option>
+                            <option>Bcom</option>
+                            <option>BA</option>
+                            <option>MBBS</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Want us to send you junk email?</td>
+                    <td>
+                        <input type="radio" name="answer" value="Absoulately" />Absoulately
+                        <input type="radio" name="answer" value="Not" />No way,man
+                    </td>
+                </tr>
+            </table>
+                   <input type="button" value="SUBMIT" onclick="ValidateData()"/>
+                    <input type="reset" value="RESET" />
+                
+            
+        </form>
+    
+
+</body>
+</html>

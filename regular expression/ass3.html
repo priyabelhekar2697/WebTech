@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Form Validation</title>
+    <script src="ass3.js" type="text/javascript"></script>
+</head>
+<body>
+    <div style="background-color:black;width:100%;height:100px">
+        <h1> <strong style="color:white">First Northen Bank</strong>&emsp;<img src="bank.jpg" style="height:50px;width:50px" /></h1>
+
+    </div>
+    <div style="background-color:red;height:450px;width:15%;float:left">
+
+    </div>
+    <div style="width:900px;height:450px;background-color:lightblue;float:left">
+        &emsp;<h2>New User Registration Form</h2>
+        <p>
+            <h3>
+                In order to used FNB<sup>,</sup>s <span style="color:orangered">All Day Banking service</span> please complete the following
+                details the the submit button to complete the cycle.
+            </h3>
+
+        </p>
+        <form name="f1">
+            <table>
+                <tr>
+                    <td> <label for="firstname">Enter first name</label></td>
+                    <td> <input type="text" name="first" id="firstname"/></td>
+                </tr>
+                <tr>
+                    <td><label for="lastname">Enter last name</label></td>
+                    <td><input type="text" name="lastname" id="lastname" /></td>
+                </tr>
+                <tr>
+                    <td> <label for="uid">Your preffered user id</label></td>
+                    <td> <input type="text" name="uid" id="uid" /></td>
+                </tr>
+                <tr>
+                    <td> <label for="edd">Email Adress</label></td>
+                    <td> <input type="email" name="edd" id="edd" /></td>
+                </tr>
+                <tr>
+                    <td> <label for="act">Account Number</label></td>
+                    <td> <input type="text" name="act" id="act" /></td>
+                </tr>
+                <tr>
+                    <td><label for="crnum">Credit Card Number </label></td>
+                    <td><input type="text" name="crnum" id="crnum" /></td>
+                </tr>
+                <tr>
+                    <td><label for="pass">Online Password </label></td>
+                    <td><input type="password" name="pass" id="pass" /></td>
+                    <td><span style="color:red" id="fail"></span></td>
+                </tr>
+                <tr>
+                    <td><label for="pass1">Online Password (Repeated)</label></td>
+                    <td><input type="password" name="pass1" id="pass1" /></td>
+                </tr>
+            </table>
+            <input type="button" value="SUBMIT" onclick="ValidateData()" />
+            <input type="reset" value="RESET" />
+
+        </form>
+    </div>
+    <div style="background-color:red;height:450px;width:226px;float:left">
+
+    </div>
+</body>
+</html>
